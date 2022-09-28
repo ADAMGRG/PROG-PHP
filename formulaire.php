@@ -53,6 +53,16 @@
 		echo "Vous n'avez rien coché la case" . "<br>";
 	}
 
+if (empty($_POST['classe'])) { // Champs de la Classe
+              echo "Erreur de classe" . "<br>";
+} else {
+              echo "Classe conforme" . "<br>";}
+b) Créer un fichier "tableau3.php", ajouter ce code dedans : <?php
+        $marque = array("volvo","BMW","Toyota", "Peugeot","Renault",);
+        $i=0;
+        foreach ($elem as $marque) {
+              echo "Vente de : " . $elem . "<br/>";
+} ?>
 
 
 	if (file_exists($_POST['cv'])){ // Verification  du CV
